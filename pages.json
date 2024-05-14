@@ -1,0 +1,110 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^s-(.*)": "@/sheep/components/s-$1/s-$1.vue",
+      "^su-(.*)": "@/sheep/ui/su-$1/su-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/login/accountLogin",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/login/relationAccount",
+      "style": {
+        "navigationBarTitleText": "关联账号"
+      }
+    },
+    {
+      "path": "pages/login/userPrivacy",
+      "style": {
+        "navigationBarTitleText": "用户协议及隐私政策",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "课程",
+        "disableScroll": true
+      }
+    },
+
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "disableScroll": true
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "page_my",
+      "pages": [
+        {
+          "path": "account/account",
+          "style": {
+            "navigationBarTitleText": "姓名",
+            "disableScroll": true
+          }
+        },
+        {
+          "path": "password/password",
+          "style": {
+            "navigationBarTitleText": "修改密码",
+            "disableScroll": true
+          }
+        },
+        {
+          "path": "studentNum/studentNum",
+          "style": {
+            "navigationBarTitleText": "学号",
+            "disableScroll": true
+          }
+        }
+      ]
+    }
+  ],
+
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "课搭子",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "rgba(26,29,52,0.65)",
+    "iconWidth": "12px",
+    "selectedColor": "#2CABF8",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "课程",
+        "iconPath": "static/img/bar-course.png",
+        "selectedIconPath": "static/img/bar-course-select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/img/bar-my.png",
+        "selectedIconPath": "static/img/bar-my-select.png"
+      }
+    ]
+  }
+}

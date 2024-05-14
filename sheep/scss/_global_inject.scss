@@ -1,0 +1,9 @@
+@use 'sass:math';
+// 全局函数：将像素值转换为响应式像素值
+@function pxToRpx($pxValue) {
+  // 假设基准宽度是375px（iPhone 6的宽度）
+  // 750rpx 等于这个基准宽度
+  $rpxRatio: math.div(750 , 414);
+  $rpxResult: $pxValue * $rpxRatio;
+  @return #{$rpxResult}rpx;
+}

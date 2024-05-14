@@ -1,0 +1,16 @@
+/* global.css */
+// button按钮
+button,uni-button {
+  height: pxToRpx(48);
+  line-height: pxToRpx(48) !important;
+  font-size: pxToRpx(17) !important;
+  font-weight: 600;
+  &.normal {
+    background: $white;
+    color: $title;
+  }
+  &.primary {
+    background: $blue;
+    color: $white;
+  }
+}
